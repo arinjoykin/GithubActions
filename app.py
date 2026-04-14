@@ -14,6 +14,6 @@ class HelloHandler(BaseHTTPRequestHandler):
             self.end_headers()
 
 if __name__ == '__main__':
-    server = HTTPServer(('localhost', 5000), HelloHandler)
-    print('Server running on port 5000...')
+    server = HTTPServer(('localhost', 5050), HelloHandler)
+    print('Server running on port 5050...')
     server.serve_forever()
